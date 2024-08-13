@@ -2,14 +2,14 @@ import { atom, useAtom } from "jotai";
 import { useEffect } from "react";
 
 const pictures = [
-  "DSC00680",
-  "DSC00933",
-  "DSC00966",
-  "DSC00983",
-  "DSC01011",
-  "DSC01040",
-  "DSC01064",
-  "DSC01071",
+  "1",
+  "10",
+  "4",
+  "5",
+  "7",
+  "3",
+  "8",
+  "2",
   "DSC01103",
   "DSC01145",
   "DSC01420",
@@ -23,7 +23,7 @@ const pictures = [
 export const pageAtom = atom(0);
 export const pages = [
   {
-    front: "book-cover",
+    front: "mars",
     back: pictures[0],
   },
 ];
@@ -51,11 +51,12 @@ export const UI = () => {
     <>
       <main className=" pointer-events-none select-none z-10 fixed  inset-0  flex justify-between flex-col">
         <a
-          className="pointer-events-auto mt-10 ml-10"
+          className="pointer-events-auto pb-11 "
           href="https://lessons.wawasensei.dev/courses/react-three-fiber"
         >
-          <img className="w-20" src="/images/wawasensei-white.png" />
+          <img className="size-28" src="/images/mars1.png" />
         </a>
+
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
             {[...pages].map((_, index) => (
@@ -89,54 +90,52 @@ export const UI = () => {
         <div className="relative">
           <div className="bg-white/0  animate-horizontal-scroll flex items-center gap-8 w-max px-8">
             <h1 className="shrink-0 text-white text-10xl font-black ">
-              Wawa Sensei
+              Mars It School
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
-              React Three Fiber
+              2024 Hacathons
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Three.js
+              Mars it school
             </h2>
-            <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
-              Ultimate Guide
-            </h2>
+
             <h2 className="shrink-0 text-white text-9xl font-medium">
-              Tutorials
+              2024 Hacathons
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-extralight italic">
-              Learn
+              Mars It School
             </h2>
             <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
+              2024 Hacathons
             </h2>
             <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
+              Mars It School
             </h2>
           </div>
           <div className="absolute top-0 left-0 bg-white/0 animate-horizontal-scroll-2 flex items-center gap-8 px-8 w-max">
             <h1 className="shrink-0 text-white text-10xl font-black ">
-              Wawa Sensei
+              2024 Hacathons
             </h1>
             <h2 className="shrink-0 text-white text-8xl italic font-light">
               React Three Fiber
             </h2>
             <h2 className="shrink-0 text-white text-12xl font-bold">
-              Three.js
+              2024 Hacathons
             </h2>
             <h2 className="shrink-0 text-transparent text-12xl font-bold italic outline-text">
               Ultimate Guide
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-medium">
-              Tutorials
+              Mars It School
             </h2>
             <h2 className="shrink-0 text-white text-9xl font-extralight italic">
               Learn
             </h2>
             <h2 className="shrink-0 text-white text-13xl font-bold">
-              Practice
+              Mars It School
             </h2>
             <h2 className="shrink-0 text-transparent text-13xl font-bold outline-text italic">
-              Creative
+              2024 Hacathons
             </h2>
           </div>
         </div>
